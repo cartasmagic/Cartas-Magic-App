@@ -6,8 +6,11 @@ package cartas.magic.app
  * @author gastonortiz@gmail.com
  */
 class Expansion {
+	static hasMany = [cards: Card]
 
 	static constraints = {
+		
 	}
-	
+	String symbol
+	String name
 }

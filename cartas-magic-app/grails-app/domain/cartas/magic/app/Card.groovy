@@ -7,8 +7,11 @@ package cartas.magic.app
  * @author gastonortiz@gmail.com
  */
 class Card {
+	
+	static belongsTo = [Expansion]
 
 	static constraints = {
+		
 	}
 
 	String manaCost
