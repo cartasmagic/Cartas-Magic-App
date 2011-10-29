@@ -16,8 +16,8 @@ body {
     color: #333;
     font: 11px verdana, arial, helvetica, sans-serif;
 }
-#grailsLogo {
-	padding:20px;
+#mtgLogo {
+	padding: 30px;
 }
 
 a:link, a:visited, a:hover {
@@ -270,4 +270,16 @@ th.desc a {
 .buttons input.save {
     background: transparent url(../images/skin/database_save.png) 5px 50% no-repeat;
     padding-left: 28px;
+}
+
+#footer {
+	clear: both;
+	text-align: center;
+	padding: 3px;
+	border-top: 1px solid #333;
+}
+
+#contents {
+	width: 1024px;
+	margin: 0 auto;
 }
