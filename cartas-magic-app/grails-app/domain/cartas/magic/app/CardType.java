@@ -1,5 +1,6 @@
 package cartas.magic.app;
 
+
 /**
  * Enum that defines the type of card.
  * 

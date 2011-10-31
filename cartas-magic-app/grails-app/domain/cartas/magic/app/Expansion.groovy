@@ -1,5 +1,6 @@
 package cartas.magic.app
 
+
 /**
  * An expansion is a set of cards. All cards belong to an expansion.
  * 
@@ -13,4 +14,5 @@ class Expansion {
 	}
 	String symbol
 	String name
+	String image
 }

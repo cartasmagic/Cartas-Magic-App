@@ -19,7 +19,6 @@ class Card {
 	String name
 	String image
 	String description
-	Expansion expansion
 	def types = []
 	def subtypes = []
 }

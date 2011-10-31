@@ -55,10 +55,20 @@
             <div class="homePagePanel">
                 <div class="panelTop"></div>
                 <div class="panelBody">
-                    <h1>Acciones</h1>
-                    <ul>
-                        <li><g:link controller="card" action="list">Listar cartas</g:link></li>
-                    </ul>
+                    <div id="adminPanel">
+	                    <h1>Administradores</h1>
+	                    <ul>
+	                        <li><g:link controller="card" action="create">Crear carta</g:link></li>
+	                        <li><g:link controller="expansion" action="create">Crear expansion</g:link></li>
+	                    </ul>
+                    </div>
+                	<div id="userPanel">
+	                    <h1>Usuarios</h1>
+	                    <ul>
+	                        <li><g:link controller="card" action="list">Listar cartas</g:link></li>
+	                        <li><g:link controller="expansion" action="list">Listar expansiones</g:link></li>
+	                    </ul>
+	                </div>
                 </div>
                 <div class="panelBtm"></div>
             </div>

@@ -1,5 +1,3 @@
-
-
 <%@ page import="cartas.magic.app.Card" %>
 <html>
     <head>
@@ -18,9 +16,9 @@
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
-            <g:hasErrors bean="${cardInstance}">
+            <g:hasErrors bean="${card}">
             <div class="errors">
-                <g:renderErrors bean="${cardInstance}" as="list" />
+                <g:renderErrors bean="${card}" as="list" />
             </div>
             </g:hasErrors>
             <g:form action="save" >
@@ -31,40 +29,40 @@
                                 <td valign="top" class="name">
                                     <label for="name"><g:message code="card.name.label" default="Name" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: cardInstance, field: 'name', 'errors')}">
-                                    <g:textField name="name" value="${cardInstance?.name}" />
+                                <td valign="top" class="value ${hasErrors(bean: card, field: 'name', 'errors')}">
+                                    <g:textField name="name" value="${card?.name}" />
                                 </td>
                             </tr>
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="manaCost"><g:message code="card.manaCost.label" default="Mana Cost" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: cardInstance, field: 'manaCost', 'errors')}">
-                                    <g:textField name="manaCost" value="${fieldValue(bean: cardInstance, field: 'manaCost')}" />
+                                <td valign="top" class="value ${hasErrors(bean: card, field: 'manaCost', 'errors')}">
+                                    <g:textField name="manaCost" value="${fieldValue(bean: card, field: 'manaCost')}" />
                                 </td>
                             </tr>
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="image"><g:message code="card.image.label" default="Image" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: cardInstance, field: 'image', 'errors')}">
-                                    <g:textField name="image" value="${cardInstance?.image}" />
+                                <td valign="top" class="value ${hasErrors(bean: card, field: 'image', 'errors')}">
+                                    <g:textField name="image" value="${card?.image}" />
                                 </td>
                             </tr>
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="description"><g:message code="card.description.label" default="Description" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: cardInstance, field: 'description', 'errors')}">
-                                    <g:textField name="description" value="${cardInstance?.description}" />
+                                <td valign="top" class="value ${hasErrors(bean: card, field: 'description', 'errors')}">
+                                    <g:textField name="description" value="${card?.description}" />
                                 </td>
                             </tr>
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="price"><g:message code="card.price.label" default="Price" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: cardInstance, field: 'price', 'errors')}">
-                                    <g:textField name="price" value="${fieldValue(bean: cardInstance, field: 'price')}" />
+                                <td valign="top" class="value ${hasErrors(bean: card, field: 'price', 'errors')}">
+                                    <g:textField name="price" value="${fieldValue(bean: card, field: 'price')}" />
                                 </td>
                             </tr>
                         
